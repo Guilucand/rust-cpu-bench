@@ -148,8 +148,8 @@ fn test_uncontended_atomic_strided(cpu_count: usize) {
 #[repr(align(4096))]
 struct IntStrided(u64);
 
-fn test_uncontended_integer_strided(cpu_count: usize) {
-    println!("Test uncontended integer strided...");
+fn test_uncontended_integer_non_strided(cpu_count: usize) {
+    println!("Test uncontended integer non strided...");
     static mut VALS: [u64; 1024] = [0; 1024];
 
     for i in 0..cpu_count {
@@ -175,6 +175,33 @@ fn test_uncontended_integer_strided(cpu_count: usize) {
     });
 }
 
+
+fn test_uncontended_integer_strided(cpu_count: usize) {
+    println!("Test uncontended integer non strided...");
+    static mut VALS: [IntStrided; 1024] = [IntStrided(0); 1024];
+
+    for i in 0..cpu_count {
+        let refer = unsafe { &mut VALS[i].0 };
+        std::thread::spawn(move || {
+            loop {
+                unsafe {
+                    let val = std::ptr::read_volatile(refer as *const u64) + 1;
+                    std::ptr::write_volatile(refer as *mut u64, val);
+                }
+            }
+        });
+    }
+
+    set_fn(move || {
+        let mut result = 0;
+
+        for i in 0..cpu_count {
+            result += unsafe { VALS[i].0 as u128 };
+        }
+
+        result
+    });
+}
 
 fn test_uncontended_pmutex(cpu_count: usize) {
     println!("Test p.lot uncontended mutex...");
@@ -239,6 +266,9 @@ fn main() {
             test_uncontended_atomic_strided(cpu_count)
         }
         7 => {
+            test_uncontended_integer_non_strided(cpu_count)
+        }
+        8 => {
             test_uncontended_integer_strided(cpu_count)
         }
         _ => {
