@@ -169,7 +169,7 @@ fn test_uncontended_integer_non_strided(cpu_count: usize) {
         let mut result = 0;
 
         for i in 0..cpu_count {
-            result += unsafe { VALS[i] as u128 };
+            result += unsafe { std::ptr::read_volatile(&VALS[i] as *const u64) as u128 };
         }
 
         result
@@ -197,7 +197,7 @@ fn test_uncontended_integer_strided(cpu_count: usize) {
         let mut result = 0;
 
         for i in 0..cpu_count {
-            result += unsafe { VALS[i].0 as u128 };
+            result += unsafe { std::ptr::read_volatile(&VALS[i].0 as *const u64) as u128 };
         }
 
         result
