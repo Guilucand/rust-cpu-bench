@@ -115,7 +115,6 @@ fn test_uncontended_atomic(cpu_count: usize) {
 }
 
 #[repr(align(4096))]
-#[derive(Copy, Clone)]
 struct Strided(AtomicU64);
 
 fn test_uncontended_atomic_strided(cpu_count: usize) {
