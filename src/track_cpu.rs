@@ -11,7 +11,6 @@ pub fn set_fn(f: impl Fn() -> u128 + 'static) {
 
 pub fn start_tracking() {
     std::thread::spawn(|| {
-
         let now = Instant::now();
         let mut last_stats = simple_process_stats::ProcessStats::get().unwrap();
         let mut last_time = now.elapsed();
@@ -19,17 +18,24 @@ pub fn start_tracking() {
         loop {
             std::thread::sleep(Duration::from_millis(1000));
 
-
             let stats = simple_process_stats::ProcessStats::get().unwrap();
             let time = now.elapsed();
 
             let delta = time - last_time;
-            let cpu_time = (stats.cpu_time_user - last_stats.cpu_time_user).as_secs_f64() / (delta.as_secs_f64());
-            let sys_time = (stats.cpu_time_kernel - last_stats.cpu_time_kernel).as_secs_f64() / (delta.as_secs_f64());
-            println!("Cpu usage: {:.2} System usage: {:.2} {:.2}M/s", cpu_time, sys_time,
-                     unsafe {
-                         TRACK_FN.as_ref().map(|f| f()).unwrap_or(0) as f64 / now.elapsed().as_secs_f64() / (1024.0 * 1024.0)
-                     }
+            let cpu_time = (stats.cpu_time_user - last_stats.cpu_time_user).as_secs_f64()
+                / (delta.as_secs_f64());
+            let sys_time = (stats.cpu_time_kernel - last_stats.cpu_time_kernel).as_secs_f64()
+                / (delta.as_secs_f64());
+            println!(
+                "Cpu usage: {:.2} System usage: {:.2} Tot usage: {:.2} {:.2}M/s",
+                cpu_time,
+                sys_time,
+                cpu_time + sys_time,
+                unsafe {
+                    TRACK_FN.as_ref().map(|f| f()).unwrap_or(0) as f64
+                        / now.elapsed().as_secs_f64()
+                        / (1024.0 * 1024.0)
+                }
             );
 
             last_stats = stats;

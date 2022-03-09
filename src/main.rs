@@ -1,4 +1,5 @@
 mod track_cpu;
+mod writing_test;
 
 use std::sync::{Arc, Mutex as StdMutex};
 use std::sync::atomic::{AtomicU64, AtomicUsize, Ordering};
@@ -8,6 +9,7 @@ use parking_lot::Mutex;
 use rayon::prelude::*;
 use structopt::StructOpt;
 use crate::track_cpu::set_fn;
+use crate::writing_test::writing_test;
 
 #[derive(StructOpt)]
 struct Args {
@@ -145,6 +147,39 @@ fn test_uncontended_atomic_strided(cpu_count: usize) {
     });
 }
 
+#[repr(align(64))]
+struct Strided64(AtomicU64);
+
+
+fn test_uncontended_atomic_strided64(cpu_count: usize) {
+    println!("Test uncontended atomic strided 64...");
+    let mut atomic_vals = vec![];
+
+    for _ in 0..cpu_count {
+        atomic_vals.push(Arc::new(Strided64(AtomicU64::new(0))));
+    }
+
+    for i in 0..cpu_count {
+        let atomic_val = atomic_vals[i].clone();
+        std::thread::spawn(move || {
+            loop {
+                atomic_val.0.fetch_add(1, Ordering::SeqCst);
+            }
+        });
+    }
+
+    set_fn(move || {
+        let mut result = 0;
+
+        for i in 0..cpu_count {
+            result += atomic_vals[i].0.load(Ordering::SeqCst) as u128;
+        }
+
+        result
+    });
+}
+
+
 #[repr(align(4096))]
 #[derive(Copy, Clone)]
 struct IntStrided(u64);
@@ -271,6 +306,12 @@ fn main() {
         }
         8 => {
             test_uncontended_integer_strided(cpu_count)
+        }
+        9 => {
+            test_uncontended_atomic_strided64(cpu_count)
+        }
+        10 => {
+            writing_test(cpu_count)
         }
         _ => {
             println!("Unsupported!");

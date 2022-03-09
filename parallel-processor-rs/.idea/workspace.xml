@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/binary-reader/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c42e5606-f9ad-4f2f-98ab-3394c1164078" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mem_tracker/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mem_tracker/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mem_tracker/tracked_box.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mem_tracker/tracked_box.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mem_tracker/tracked_vec.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/mem_tracker/tracked_vec.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/memory_fs/allocator/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/memory_fs/allocator/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/memory_fs/file/internal.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/memory_fs/file/internal.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/memory_fs/file/reader.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/memory_fs/file/reader.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/memory_fs/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/memory_fs/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/multi_thread_buckets.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/multi_thread_buckets.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assemble_pipeline/assembler_minimizer_bucketing.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/assemble_pipeline/assembler_minimizer_bucketing.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assemble_pipeline/build_unitigs.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/assemble_pipeline/build_unitigs.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assemble_pipeline/hashes_sorting.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/assemble_pipeline/hashes_sorting.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assemble_pipeline/links_compaction.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/assemble_pipeline/links_compaction.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assemble_pipeline/parallel_kmers_merge.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/assemble_pipeline/parallel_kmers_merge.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assemble_pipeline/reorganize_reads.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/assemble_pipeline/reorganize_reads.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assembler.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/assembler.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/assembler_generic_dispatcher.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/assembler_generic_dispatcher.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/hashes/base/cn_rkhash_base.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/hashes/base/cn_rkhash_base.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/hashes/base/cn_seqhash_base.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/hashes/base/cn_seqhash_base.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/hashes/base/fw_rkhash_base.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/hashes/base/fw_rkhash_base.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/hashes/base/fw_seqhash_base.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/hashes/base/fw_seqhash_base.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/hashes/cn_nthash.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/hashes/cn_nthash.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/hashes/fw_nthash.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/hashes/fw_nthash.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/hashes/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/hashes/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/io/concurrent/intermediate_storage.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/io/concurrent/intermediate_storage.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/io/concurrent/intermediate_storage_single.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/io/concurrent/intermediate_storage_single.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/io/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/io/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/pipeline_common/kmers_transform/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/pipeline_common/kmers_transform/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/pipeline_common/kmers_transform/process_subbucket.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/pipeline_common/kmers_transform/process_subbucket.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/pipeline_common/kmers_transform/structs.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/pipeline_common/kmers_transform/structs.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/pipeline_common/minimizer_bucketing/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/pipeline_common/minimizer_bucketing/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/pipeline_common/minimizer_bucketing/reader.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/pipeline_common/minimizer_bucketing/reader.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/querier.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/querier.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/querier_generic_dispatcher.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/querier_generic_dispatcher.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/query_pipeline/parallel_kmers_query.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/query_pipeline/parallel_kmers_query.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/query_pipeline/querier_minimizer_bucketing.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/query_pipeline/querier_minimizer_bucketing.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/rolling/minqueue.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/rolling/minqueue.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/types.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/types.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/async_vec.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/chunked_vector.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/debug_functions.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/utils/debug_functions.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/flexible_pool.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../src/utils/mod.rs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+        <option value="Rust File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="6iee02h7" />
+  </component>
+  <component name="ProjectId" id="1sfxLhDcVrhEWP610s4tkAlpRa3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/bin" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cargo.Test memory_fs::tests::memory_fs_test">
+    <configuration name="Check" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="command" value="check --release" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command" nameIsGenerated="true">
+      <option name="command" value="run --bin plotter -- -k 32" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunPhase0" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="command" value="run --release --bin plotter -- -k 32 -u128 --phase0 -t $PROJECT_DIR$/.temp-di" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunPhase1" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="command" value="run --bin plotter -- -k 32 -u128 --phase1 -t $PROJECT_DIR$/.temp-di" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test entry::test_decoding" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package plotter --lib entry::test_decoding -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test lib_sort::test_radix_sort" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test  --package plotter --lib lib_sort::test_radix_sort -- --exact --nocapture" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test memory_fs::allocator::allocate_memory" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package parallel-processor --lib memory_fs::allocator::allocate_memory -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test memory_fs::tests::memory_fs_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package parallel-processor --lib memory_fs::tests::memory_fs_test -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Cargo.Run" />
+      <item itemvalue="Cargo.Check" />
+      <item itemvalue="Cargo.RunPhase1" />
+      <item itemvalue="Cargo.RunPhase0" />
+      <item itemvalue="Cargo.Test lib_sort::test_radix_sort" />
+      <item itemvalue="Cargo.Test entry::test_decoding" />
+      <item itemvalue="Cargo.Test memory_fs::allocator::allocate_memory" />
+      <item itemvalue="Cargo.Test memory_fs::tests::memory_fs_test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo.Test memory_fs::tests::memory_fs_test" />
+        <item itemvalue="Cargo.Test memory_fs::allocator::allocate_memory" />
+        <item itemvalue="Cargo.Test entry::test_decoding" />
+        <item itemvalue="Cargo.Test lib_sort::test_radix_sort" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="runRustfmtOnSave" value="true" />
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="useRustfmt" value="true" />
+    <option name="version" value="2" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c42e5606-f9ad-4f2f-98ab-3394c1164078" name="Default Changelist" comment="" />
+      <created>1621277395164</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621277395164</updated>
+      <workItem from="1621277396686" duration="14850000" />
+      <workItem from="1621328909886" duration="43610000" />
+      <workItem from="1621414690130" duration="48955000" />
+      <workItem from="1621499736376" duration="672000" />
+      <workItem from="1641226869912" duration="16040000" />
+      <workItem from="1641294615838" duration="13657000" />
+      <workItem from="1641395615939" duration="1832000" />
+      <workItem from="1641464249027" duration="613000" />
+      <workItem from="1641464872709" duration="279000" />
+      <workItem from="1641465161974" duration="134000" />
+      <workItem from="1641465313842" duration="20000" />
+      <workItem from="1641465347935" duration="130000" />
+      <workItem from="1641465528393" duration="55000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/memory_fs/file/internal.rs</url>
+          <line>254</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
